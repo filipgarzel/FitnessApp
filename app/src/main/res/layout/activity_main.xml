@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity"
+    >
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/baseBtn"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/baseBtn"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_toStartOf="@+id/calendarBtn"
+        android:layout_toEndOf="@+id/scenarioBtn"
+        android:text="@string/base"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <Button
+        android:id="@+id/scenarioBtn"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/userPlan"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calendarBtn"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/calendar" />
+
+
+</RelativeLayout>

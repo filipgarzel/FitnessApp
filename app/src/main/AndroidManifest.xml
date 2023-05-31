@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitness">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/label"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fitness">
+        <activity
+            android:name=".scenario.ShowScenarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.ShowExActivity"
+            android:exported="false"
+            android:parentActivityName=".scenario.ShowScenarioActivity" />
+        <activity
+            android:name=".base.AddExerciseActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BaseActivity" />
+        <activity
+            android:name=".calendar.CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.BaseActivity"
+            android:exported="false"
+            android:parentActivityName=".main.MainActivity" />
+        <activity
+            android:name=".scenario.WorkoutRoutineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.ChestActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BaseActivity" />
+        <activity
+            android:name=".base.BackActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BaseActivity" />
+        <activity
+            android:name=".base.TricepsActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BaseActivity" />
+        <activity
+            android:name=".base.BicepsActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BaseActivity" />
+        <activity
+            android:name=".base.ShouldersActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BaseActivity" />
+        <activity
+            android:name=".base.LegsActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BaseActivity" />
+        <activity
+            android:name=".base.ABSActivity"
+            android:exported="false"
+            android:parentActivityName=".base.BicepsActivity" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
